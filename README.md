@@ -8,7 +8,7 @@
 
 ## 🎥 Demonstração
 <br>
-![Demonstração do Dashboard](./demo/demo.mp4)
+<video src="./demo/demo.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ---
 
