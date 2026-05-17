@@ -8,7 +8,7 @@
 
 ## 🎥 Demonstração
 <br>
-<video src="./demo/demo.mp4" autoplay loop muted playsinline width="100%"></video>
+<video src="https://raw.githubusercontent.com/KarenGomes/google-workspace-dashboard/main/demo/demo.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ---
 
