@@ -1,0 +1,95 @@
+# 📊 Dashboard — Por onde começo hoje?
+
+Dashboard de início de dia que exibe emails não lidos e reuniões do dia em tempo real via Google APIs.
+
+## Stack
+
+- **React 18** + **Vite 5** — SPA client-side
+- **Chart.js** + **react-chartjs-2** — gráfico de volume semanal de emails
+- **Google Identity Services (GSI)** — autenticação OAuth client-side
+- **Gmail API v1** + **Google Calendar API v3** — dados reais
+
+---
+
+## Pré-requisitos
+
+- Node.js ≥ 18
+- Conta Google com acesso ao [Google Cloud Console](https://console.cloud.google.com)
+
+---
+
+## Como rodar
+
+### 1. Clone e instale dependências
+
+```bash
+git clone <url-do-repo>
+cd projeto-dashboard
+npm install
+```
+
+### 2. Configure o `.env`
+
+```bash
+cp .env.example .env
+```
+
+O arquivo já vem com o Client ID de desenvolvimento. Para usar seu próprio:
+
+```env
+VITE_GOOGLE_CLIENT_ID=seu-client-id.apps.googleusercontent.com
+```
+
+### 3. Autorize a origem no Google Cloud Console
+
+No [Cloud Console → APIs → Credenciais](https://console.cloud.google.com/apis/credentials), adicione em **Authorized JavaScript origins**:
+
+```
+http://localhost:8000
+```
+
+### 4. Inicie o servidor
+
+```bash
+npm run dev
+```
+
+Acesse **http://localhost:8000**, clique em **Entrar com Google** e autorize os escopos de leitura.
+
+---
+
+## Scripts
+
+| Comando | O que faz |
+|---------|-----------|
+| `npm run dev` | Servidor de desenvolvimento (HMR) |
+| `npm run build` | Build de produção em `/dist` |
+| `npm run preview` | Preview do build de produção |
+
+---
+
+## Estrutura resumida
+
+```
+src/
+├── context/      # AuthContext · ThemeContext
+├── hooks/        # useGmail · useCalendar
+├── services/     # googleAuth · gmailService · calendarService
+├── components/   # layout/ · cards/ · chart/ · agenda/
+└── utils/        # logger · dateUtils
+docs/
+├── ARCHITECTURE.md      # Decisões técnicas e fluxo de dados
+├── API_INTEGRATION.md   # Referência das APIs Google
+└── COMPONENTS.md        # Props e assinaturas de hooks
+```
+
+---
+
+## Funcionalidades
+
+- 🔐 Login com Google (OAuth, somente leitura)
+- 📬 Emails não lidos na caixa de entrada
+- 🗓️ Reuniões do dia e próximo compromisso com contagem regressiva
+- 📊 Gráfico de volume de emails dos últimos 7 dias
+- 🌙 / ☀️ Modo escuro e claro (persiste no localStorage)
+- 📋 Agenda completa do dia com horário e duração
