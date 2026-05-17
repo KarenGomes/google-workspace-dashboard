@@ -1,6 +1,19 @@
-# 📊 Dashboard — Por onde começo hoje?
+# 📊 Matina Dashboard — Por onde começo hoje?
 
-Dashboard de início de dia que exibe emails não lidos e reuniões do dia em tempo real via Google APIs.
+**🚀 [Acesse o projeto em produção aqui!](https://karengomes.github.io/google-workspace-dashboard/)**
+
+> ✨ **Quer testar o software usando o seu e-mail?**
+> Como a aplicação utiliza a API do Google em fase de verificação, eu preciso autorizar o seu e-mail para que você possa fazer login. Vai ser um prazer enorme liberar o seu acesso para você ver o projeto funcionando com os seus próprios dados!
+> **Entre em contato comigo:** [karen.gomes12023@gmail.com](mailto:karen.gomes12023@gmail.com)
+
+## 🎥 Demonstração
+*(Coloque aqui o seu vídeo ou GIF de demonstração)*
+<br>
+![Demonstração do Dashboard](./assets/demo.mp4)
+
+---
+
+Dashboard responsivo de início de dia que exibe emails não lidos, reuniões do dia e tendências em tempo real via Google APIs.
 
 ## Stack
 
