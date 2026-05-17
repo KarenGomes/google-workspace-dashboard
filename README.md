@@ -1,4 +1,4 @@
-# 📊 Matina Dashboard — Por onde começo hoje?
+# Dashboard — Por onde começo hoje?
 
 **🚀 [Acesse o projeto em produção aqui!](https://karengomes.github.io/google-workspace-dashboard/)**
 
@@ -7,9 +7,8 @@
 > **Entre em contato comigo:** [karen.gomes12023@gmail.com](mailto:karen.gomes12023@gmail.com)
 
 ## 🎥 Demonstração
-*(Coloque aqui o seu vídeo ou GIF de demonstração)*
 <br>
-![Demonstração do Dashboard](./assets/demo.mp4)
+![Demonstração do Dashboard](./demo/demo.mp4)
 
 ---
 
