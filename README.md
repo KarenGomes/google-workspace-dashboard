@@ -8,8 +8,7 @@
 
 ## 🎥 Demonstração
 <br>
-https://github.com/user-attachments/assets/9efcad05-6967-44b5-b7dc-aeffa065b36e
-
+<video src="https://github.com/user-attachments/assets/9efcad05-6967-44b5-b7dc-aeffa065b36e" autoplay loop muted playsinline width="100%"></video>
 ---
 
 Dashboard responsivo de início de dia que exibe emails não lidos, reuniões do dia e tendências em tempo real via Google APIs.
